@@ -13,8 +13,8 @@
 - [План разработки](https://github.com/Aragon1898/repository-manager/blob/c5c07868a881fdd1ccf95101054a02e7128e1427/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/%D0%9F%D0%BB%D0%B0%D0%BD%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8.md)
 
 ### 3. Дополнительные материалы
-- [Все диаграммы (PlantUML)](Документация/Диаграммы/PlantUML)
-- [Все диаграммы (Изображения)](Документация/Диаграммы)
+- [Все диаграммы (PlantUML)](https://github.com/Aragon1898/repository-manager/tree/52202a6cfa69bdbe3b34341ccca869df60f1a37a/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B/PlantUML)
+- [Все диаграммы (Изображения)](https://github.com/Aragon1898/repository-manager/tree/52202a6cfa69bdbe3b34341ccca869df60f1a37a/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B)
 
 
 
