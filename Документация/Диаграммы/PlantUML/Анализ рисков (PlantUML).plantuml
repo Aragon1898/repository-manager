@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+
+rectangle "Технические риски" as tech {
+  rectangle "Сбои API хостингов"
+  rectangle "Производительность"
+  rectangle "Безопасность токенов"
+}
+
+rectangle "Организационные риски" as org {
+  rectangle "Сроки разработки"
+  rectangle "Тестирование интеграции"
+}
+
+rectangle "Операционные риски" as op {
+  rectangle "Потеря данных"
+  rectangle "Ошибки Git"
+}
+
+rectangle "Внешние риски" as ext {
+  rectangle "Изменения API"
+  rectangle "Лимиты хостингов"
+}
+@enduml
+
+tech --> org : Влияние на график
+org --> op : Недотестирование → ошибки
+op --> ext : Зависимость от внешних факторов
+@enduml

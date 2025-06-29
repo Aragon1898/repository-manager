@@ -1,0 +1,17 @@
+@startuml
+node "User Desktop" {
+  component "Electron App" as APP
+  component "System Git" as GIT
+}
+
+node "Git Hosting" {
+  component "GitHub" as GH
+  component "GitFlic" as GF
+  component "GitVerse" as GV
+}
+
+APP --> GH : API Calls
+APP --> GF : API Calls
+APP --> GV : API Calls
+APP --> GIT : Git Commands
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant UI
+participant BLL
+participant "Git Wrapper" as GW
+participant "System Git" as SG
+
+User -> UI: Click "Clone"
+UI -> BLL: Dispatch clone action
+BLL -> GW: Execute clone command
+GW -> SG: git clone <repo_url>
+SG --> GW: Repository cloned
+GW --> BLL: Success notification
+BLL --> UI: Update state
+UI --> User: Show success message
+@enduml

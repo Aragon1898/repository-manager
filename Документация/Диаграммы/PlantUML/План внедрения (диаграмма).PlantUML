@@ -1,0 +1,66 @@
+@startuml
+top to bottom direction
+
+skinparam {
+  ArrowColor #2C3E50
+  ActorBorderColor #2C3E50
+  ComponentBorderColor #3498DB
+  ComponentBackgroundColor #ECF0F1
+
+}
+
+actor "Пользователь" as user #E74C3C
+
+package "Electron Application" {
+  component "React UI" as ui #3498DB {
+    component "Главный экран" as main_screen #5DADE2
+    component "Страница репозитория" as repo_screen #5DADE2
+    component "OAuth Module" as oauth #5DADE2
+  }
+  
+  component "Node.js Backend" as backend #2E86C1 {
+    component "GitHub API" as github_api #3498DB
+    component "Git CLI Wrapper" as git_wrapper #3498DB
+    component "Token Manager" as token_mgr #3498DB
+  }
+}
+
+database "Local Storage" as storage #F39C12 {
+  component "Encrypted Tokens" as tokens #F1C40F
+}
+
+node "External Services" {
+  component "GitHub API" as ext_github #16A085
+  component "System Git" as sys_git #27AE60
+}
+
+' Connections
+user --> ui : Взаимодействие\nс интерфейсом
+ui --> backend : IPC Communication
+backend --> storage : Чтение/запись\nданных
+
+main_screen --> oauth : Инициирует\nавторизацию
+oauth --> ext_github : OAuth Flow
+ext_github --> token_mgr : Возвращает токен
+token_mgr --> tokens : Шифрует\nи сохраняет
+
+main_screen --> github_api : Запрос списка\nрепозиториев
+github_api --> ext_github : REST API Calls
+
+repo_screen --> git_wrapper : Управление\nрепозиториями
+git_wrapper --> sys_git : Вызов\nсистемных команд
+
+' Operations legend
+note right of user
+  <b>Основные операции:</b>
+  1. Авторизация (OAuth)
+  2. Просмотр репозиториев
+  3. Управление репозиториями:
+    - Создание/удаление
+    - Изменение видимости
+  4. Git операции:
+    - Клонирование
+    - Коммиты
+    - Push
+end note
+@enduml

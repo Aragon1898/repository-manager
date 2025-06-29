@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor User
+rectangle "Git Manager" {
+  usecase "Connect Git Hosting" as UC1
+  usecase "View Repositories" as UC2
+  usecase "Create Repository" as UC3
+  usecase "Clone Repository" as UC4
+  usecase "Commit Changes" as UC5
+  usecase "Push Changes" as UC6
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+@enduml

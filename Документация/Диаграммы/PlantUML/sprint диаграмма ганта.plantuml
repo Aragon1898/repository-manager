@@ -1,0 +1,40 @@
+@startgantt
+Project starts the 2025-06-12
+printscale weekly
+
+' Sprint 1: Подготовка
+[Sprint 1: Подготовка] starts 2025-06-12 and lasts 0 days
+[Изучение API GitHub и GitFlic - Person A] starts 2025-06-12 and lasts 3 days
+[Выбор оптимальных библиотек - Person B] starts 2025-06-15 and lasts 2 days
+[Настройка окружения - Person C] starts 2025-06-17 and lasts 2 days
+
+' Sprint 2: UI и базовая логика
+[Sprint 2: UI и логика] starts 2025-06-19 and lasts 0 days
+[Разработка базового UI - Person D] starts 2025-06-19 and lasts 4 days
+[Реализация базовых операций с Git - Person A] starts 2025-06-23 and lasts 3 days
+
+' Sprint 3: Тестирование и документация
+[Sprint 3: Тесты и доки] starts 2025-06-26 and lasts 0 days
+[Тестирование базовое - Person B] starts 2025-06-26 and lasts 3 days
+[Документация начало - Person C] starts 2025-06-29 and lasts 2 days
+
+' Sprint 4: Расширение и UI
+[Sprint 4: Расширение и UI] starts 2025-07-03 and lasts 0 days
+[Расширение функционала - Person E] starts 2025-07-03 and lasts 3 days
+[Исправление UI - Person D] starts 2025-07-06 and lasts 2 days
+
+' Sprint 5: Второе тестирование
+[Sprint 5: Повторные тесты] starts 2025-07-10 and lasts 0 days
+[Финальное тестирование - Person B] starts 2025-07-10 and lasts 3 days
+[Документация продолжение - Person C] starts 2025-07-13 and lasts 2 days
+
+' Sprint 6: Финальные правки
+[Sprint 6: Финал багфиксов] starts 2025-07-17 and lasts 0 days
+[Финальные тесты - Person A] starts 2025-07-17 and lasts 2 days
+[Финальные исправления - Person D] starts 2025-07-19 and lasts 2 days
+
+' Sprint 7: Финал
+[Sprint 7: Документация и релиз] starts 2025-07-24 and lasts 0 days
+[Финальная документация и упаковка - Person C] starts 2025-07-24 and lasts 5 days
+
+@endgantt

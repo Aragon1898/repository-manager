@@ -1,0 +1,20 @@
+@startgantt
+Project starts the 2025-06-17
+
+[Исследование и подготовка] lasts 5 days
+[Разработка MVP] lasts 10 days
+[Разработка MVP] starts after [Исследование и подготовка]'s end
+
+[Поддержка GitFlic и GitVerse] lasts 7 days
+[Поддержка GitFlic и GitVerse] starts after [Разработка MVP]'s end
+
+[Разработка PWA-версии] lasts 8 days
+[Разработка PWA-версии] starts after [Поддержка GitFlic и GitVerse]'s end
+
+[Тестирование на Windows/Linux] lasts 5 days
+[Тестирование на Windows/Linux] starts after [Разработка PWA-версии]'s end
+
+[Финальная сборка и релиз] lasts 3 days
+[Финальная сборка и релиз] starts after [Тестирование на Windows/Linux]'s end
+
+@endgantt

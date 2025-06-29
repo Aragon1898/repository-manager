@@ -1,0 +1,31 @@
+@startuml
+component "UI Layer" as UI {
+  [Main Screen]
+  [Repository List]
+  [Repository View]
+}
+
+component "Business Logic" as BLL {
+  [State Management]
+  [Operations Controller]
+  [Auth Manager]
+}
+
+component "Integration" as INT {
+  [GitHub Adapter]
+  [GitFlic Adapter]
+  [GitVerse Adapter]
+  [Git Wrapper]
+}
+
+component "Storage" as STOR {
+  [Token Storage]
+  [Cache]
+  [Config]
+}
+
+UI --> BLL : Dispatch actions\nUpdate state
+BLL --> INT : Call API\nExecute Git ops
+INT --> STOR : Store tokens\nCache data
+STOR --> INT : Retrieve tokens\nGet cached data
+@enduml
